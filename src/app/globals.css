@@ -8,7 +8,8 @@ body {
 	font-family: "Cabin", sans-serif;
 }
 @layer {
-	.text-gradient {
+	.text-gradient,
+	.footer-link:hover {
 		background: linear-gradient(90.54deg, #139ebc 36.69%, #aa1ecd 91.01%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;

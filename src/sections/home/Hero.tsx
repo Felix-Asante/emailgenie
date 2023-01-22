@@ -1,10 +1,11 @@
+import Badge from "@/components/Badge";
 import Navbar from "@/components/Navbar";
 
 export default function Hero() {
 	return (
 		<header className="bg-black h-[29rem] pb-3 relative">
 			<Navbar />
-			<section className="flex flex-col items-center justify-center w-[75%] lg:w-[47%] 2xl:w-[30%] mx-auto h-full text-center">
+			<section className="flex flex-col items-center justify-center w-[75%] lg:w-[50%] 2xl:w-[33%] mx-auto h-full text-center">
 				<h4 className="text-white text-4xl font-bold capitalize mb-3">
 					Make All your <span className="text-gradient">cold email</span> wishes
 					come True with emailGenie{" "}
@@ -36,6 +37,24 @@ export default function Hero() {
 					transform: "rotate(-180deg)",
 				}}
 			/>
+			<div className="absolute right-8 top-[30%] opacity-75">
+				<Badge>Recruiter</Badge>
+			</div>
+			<div className="absolute right-36 top-[52%] opacity-75">
+				<Badge>Content creator</Badge>
+			</div>
+			<div className="absolute right-8 bottom-[20%] opacity-75">
+				<Badge>Blogger</Badge>
+			</div>
+			<div className="absolute left-8 opacity-75 top-[30%]">
+				<Badge>Student</Badge>
+			</div>
+			<div className="absolute left-32 opacity-75 top-[52%]">
+				<Badge>Freelancer</Badge>
+			</div>
+			<div className="absolute left-8 opacity-75 bottom-[20%]">
+				<Badge>Employee</Badge>
+			</div>
 		</header>
 	);
 }
