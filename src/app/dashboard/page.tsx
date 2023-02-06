@@ -23,7 +23,7 @@ const EmailTypes = [
 ];
 export default function Dashboard() {
 	return (
-		<section className="bg-[#1E1E1E] h-screen">
+		<section>
 			<section className="flex flex-col items-center gap-2 bg-[#2C2C2C] py-5">
 				<h4 className="text-white text-2xl">
 					What email do you want to write today

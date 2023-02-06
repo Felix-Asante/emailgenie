@@ -15,14 +15,19 @@ export default function Layout({ children }: { children: ReactNode }) {
 			<div className="grid grid-cols-[20%,80%]">
 				<aside className=" bg-[#34363a] h-screen sticky left-0 top-0 ">
 					<div className="flex flex-col justify-between h-full">
-						<div className="py-6">
-							<div className="pl-6 mb-3">
+						<div className="py-3">
+							<Link href="/dashboard" className="pl-6 block mb-3">
 								<Logo width="150" />
-							</div>
+							</Link>
 							<div className="mt-4">
-								<button className="flex items-center gap-2 py-2 px-4 ml-6 bg-blue border-0 outline-none rounded-md text-white my-4">
-									<PlusCircleIcon width={18} /> New Project
-								</button>
+								<Link
+									href="/dashboard/projects/new"
+									className="flex items-center gap-2 py-2 px-4 ml-6 bg-blue border-0 outline-none rounded-md text-white my-4 w-[60%]"
+								>
+									<>
+										<PlusCircleIcon width={18} /> New Project
+									</>
+								</Link>
 								<button className="text-white flex items-center gap-2 mt-2 rounded-sm hover:bg-[#2C2C2C] p-2 pl-6 w-full">
 									<ClipboardDocumentIcon width={18} />
 									<Link href="/dashboard/projects">Projects</Link>
@@ -47,7 +52,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 				</aside>
 				<div>
 					<DashboardHeader />
-					{children}
+					<div className="bg-[#1E1E1E] h-screen">{children}</div>
 				</div>
 			</div>
 		</main>
